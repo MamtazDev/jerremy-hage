@@ -54,11 +54,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: space-between;
     align-items: center;
     gap: 32px;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
     border-bottom: 1.5px solid #D5DFF9;
     margin-bottom: 20px;
     white-space: nowrap;
     overflow-x: scroll;
+}
+
+.request_form .dropdown {
+    position: unset;
 }
 
 .request_form::-webkit-scrollbar {
