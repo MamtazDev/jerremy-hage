@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <main class="py-4">
+
+        <section class="welcome">
+            <div class="row m-0 align-items-center h-100 my-auto">
+                <div class="col-lg-8">
+                    <h1>Welcome, Jerremy Hage! 👋 </h1>
+                    <p class="happy">We’re happy to help manage your team.</p>
+
+                    <!-- request form tab section -->
+                    <div class="request_form">
+                        <div class="tabs">
+
+                            <p id="active">Request Form</p>
+                            <p>Request for approvals (27)</p>
+                            <p>Approved (09)</p>
+                            <p>Pending (18)</p>
+                            <p>Pending (18)</p>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="d-flex align-items-center dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="me-2" src="./assets/list.png" alt=""> List View <img class="ms-3"
+                                    src="./assets/arrow-down.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- basic information section -->
+                    <div class="form_section">
+                        <h2>Basic Information</h2>
+                        <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 items-center justify-between w-100">
+                            <div class="w-100">
+                                <label for="person">Person</label>
+                                <input id="person" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="no">No</label>
+                                <input id="no" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="department">Department</label>
+                                <input id="department" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="superior">Superior</label>
+                                <input id="superior" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="position">Position</label>
+                                <input id="position" type="text">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Travel Details section -->
+                    <div class="form_section">
+                        <h2>Travel Details </h2>
+                        <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 items-center justify-between w-100">
+                            <div class="w-100">
+                                <label for="purpose">Purpose</label>
+                                <input id="purpose" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="delegation">Type of Delegation</label>
+                                <input id="delegation" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="place">Place</label>
+                                <input id="place" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="departure">Departure</label>
+                                <input id="departure" type="date">
+                            </div>
+                            <div class="w-100">
+                                <label for="return">Return</label>
+                                <input id="return" type="date">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Comments section -->
+                    <div class="form_section">
+                        <h2>Comments </h2>
+                        <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 items-center justify-between w-100">
+                            <div class="w-100">
+                                <label for="permit">Application for a periodic permit</label>
+                                <input id="permit" type="text">
+                            </div>
+                            <div class="w-100">
+                                <label for="delegation">Self-verification </label>
+                                <input id="delegation" type="text">
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <button class="send_btn">Send for verification</button>
+                            <button class="cancel_btn">Cancel</button>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Kilometers tab section -->
+                    <div class="request_form">
+                        <div class="tabs">
+                            <p id="active">Kilometers</p>
+                            <p>Trip As</p>
+                        </div>
+
+                        <div class="dropdown">
+                            <button class="d-flex align-items-center dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="me-2" src="./assets/list.png" alt=""> List View <img class="ms-3"
+                                    src="./assets/arrow-down.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Kilometers section -->
+                    <div class="form_section">
+                        <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 items-center justify-between w-100 mb-4">
+                            <div class="w-100">
+                                <label for="kilometers">Kilometers</label>
+                                <input id="kilometers" type="number">
+                            </div>
+                            <div class="w-100">
+                                <label for="trip">Trip as</label>
+                                <select id="trip">
+                                    <option value="a">Pasazer</option>
+                                    <option value="b">Pasazer 2</option>
+
+                                </select>
+                            </div>
+                            <div class="w-100">
+                                <label for="supplier">Supplier</label>
+                                <select id="supplier">
+                                    <option value="a">Test</option>
+                                    <option value="b">Test 2</option>
+
+                                </select>
+                            </div>
+                            <div class="w-100">
+                                <label for="plate">Plate number</label>
+                                <input id="plate" type="number" placeholder="35469">
+                            </div>
+                            <div class="w-100">
+                                <label for="technical">Technical study date</label>
+                                <select id="technical">
+                                    <option value="a">2023-08-26</option>
+                                    <option value="b">2023-08-27</option>
+
+                                </select>
+                            </div>
+                            <div class="w-100">
+                                <label for="driver">Driver name and surname</label>
+                                <input id="driver" type="text">
+                            </div>
+
+
+                        </div>
+                        <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 items-center justify-between w-100 pe-0 pe-lg-5">
+                            <div class="w-100">
+
+                            </div>
+                            <div class="w-100">
+                                <label for="license">License number </label>
+                                <input id="license" type="number">
+                            </div>
+                            <div class="w-100">
+                                <label for="date">Date of driving license</label>
+                                <input id="date" type="date">
+                            </div>
+                            <div class="w-100">
+                                <label for="oc">OC </label>
+                                <input id="oc" type="date">
+                            </div>
+                            <div class="w-100">
+                                <label for="technical_driver">Technical driver date</label>
+                                <input id="technical_driver" type="date">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="blue_side">
+
+                        <div class="blue_box">
+                            <div class="d-flex justify-content-between gap-3">
+                                <h6>Portugal to Poland</h6>
+                                <button class="yellow_btn">Pending</button>
+                            </div>
+                            <div>
+                                <label for="destination">Destination</label>
+                                <input id="destination" type="text">
+                            </div>
+                            <div class="d-flex flex-wrap flex-lg-nowrap  gap-2 align-items-center w-100">
+                                <div class="w-100">
+                                    <label for="name">Name</label>
+                                    <input id="name" type="text">
+                                </div>
+                                <div class="w-100">
+                                    <label for="date">Date</label>
+                                    <input id="date" type="date">
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap flex-lg-nowrap  gap-3 align-items-center">
+                                <button class="blue_btn">Approve</button>
+                                <button class="red_btn">Reject</button>
+                                <button class="green_btn">Check for More Details</button>
+                            </div>
+
+                        </div>
+                        <div class="blue_box pt-2">
+                            <p class="mb-0">Dubai to Canada</p>
+                            <div class="d-flex flex-wrap flex-lg-nowrap  justify-content-between gap-1">
+                                <h6>Portugal to Poland</h6>
+                                <button class="approved_btn">Approved By Line Manager</button>
+                            </div>
+                            <div>
+                                <label for="destination">Destination</label>
+                                <input id="destination" type="text">
+                            </div>
+                            <div class="d-flex flex-wrap flex-lg-nowrap  gap-2 align-items-center w-100">
+                                <div class="w-100">
+                                    <label for="name">Name</label>
+                                    <input id="name" type="text">
+                                </div>
+                                <div class="w-100">
+                                    <label for="date">Date</label>
+                                    <input id="date" type="date">
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <button class="green_btn">Check for More Details</button>
+                            </div>
+
+                        </div>
+                        <div class="blue_box">
+
+                            <div class="d-flex justify-content-between gap-3">
+                                <h6>France to Ireland</h6>
+                                <button class="approved_btn">Approved</button>
+                            </div>
+                            <div>
+                                <label for="destination">Destination</label>
+                                <input id="destination" type="text">
+                            </div>
+                            <div class="d-flex flex-wrap flex-lg-nowrap  gap-2 align-items-center w-100">
+                                <div class="w-100">
+                                    <label for="name">Name</label>
+                                    <input id="name" type="text">
+                                </div>
+                                <div class="w-100">
+                                    <label for="date">Date</label>
+                                    <input id="date" type="date">
+                                </div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <button class="green_btn">Check for More Details</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
