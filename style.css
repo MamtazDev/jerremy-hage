@@ -197,7 +197,19 @@ select,
 }
 
 .blue_side::-webkit-scrollbar {
-    display: none;
+    width: 5px;
+}
+
+/* Track */
+.blue_side::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 15px;
+}
+
+/* Handle */
+.blue_side::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #1EC88B, #2A85FF);
+    border-radius: 10px;
 }
 
 .blue_box {
@@ -305,5 +317,11 @@ select,
 
     h1 {
         font-size: 20px;
+    }
+
+    .blue_side {
+        height: unset;
+        max-height: 94vh;
+        overflow-y: auto;
     }
 }
